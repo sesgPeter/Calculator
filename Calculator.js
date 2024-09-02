@@ -3,6 +3,9 @@ function beregn() {
   const tal1 = parseFloat(document.getElementById("tal1").value);
   const regnetegn = document.getElementById("regnetegn").value;
   const tal2 = parseFloat(document.getElementById("tal2").value);
+ 
+ let history = [];
+
 
   let resultat;
   switch (regnetegn) {
@@ -29,7 +32,14 @@ function beregn() {
       break;
     default:
       resultat = "Ugyldigt regnetegn";
-  }
+      history.push(resultat)
+  for(let e of history){
+  console.log(e);
+}
+}
 
   document.getElementById("resultat").innerHTML = "Resultat: " + resultat;
+
+
 }
+
