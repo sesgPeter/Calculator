@@ -1,52 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="Calculator.css">
-<title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Calculator.css">
+  <title>Calculator</title>
 </head>
 <body>
-
-    <div class="Calculator"></div>
-    <input type="text" id="display"enabled>
-    <div class="buttons"></div>
-
-<!--     
-    <div class="text-button" onclick="myFunction()">1</div>
-    <div class="text-button" onclick="myFunction()">2</div>
-    <div class="text-button" onclick="myFunction()">3</div>
-    <div class="text-button" onclick="myFunction()">4</div>
-    <div class="text-button" onclick="myFunction()">5</div>
-    <div class="text-button" onclick="myFunction()">6</div>
-    <div class="text-button" onclick="myFunction()">7</div>
-    <div class="text-button" onclick="myFunction()">8</div>
-    <div class="text-button" onclick="myFunction()">9</div>
-    <div class="text-button" onclick="myFunction()">0</div>
-    <div class="text-button" onclick="myFunction()">+</div>
-    <div class="text-button" onclick="myFunction()">-</div>
-    <div class="text-button" onclick="myFunction()">*</div>
-    <div class="text-button" onclick="myFunction()">/</div>
-    <div class="text-button" onclick="myFunction()">=</div> -->
-
-<button>1</button>
-<button>2</button>
-<button>3</button>
-<button>4</button>
-<button>5</button>
-<button>6</button>
-<button>7</button>
-<button>8</button>
-<button>9</button>
-<button>0</button>
-<button>+</button>
-<button>-</button>
-<button>*</button>
-<button>/</button>
-<button>=</button>
-
-
-
-
-<script src = Calculator.js></script>
-
+  <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <button data-all-clear class="span-two">AC</button>
+    <button data-delete>DEL</button>
+    <button data-operation>÷</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>*</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>-</button>
+    <button data-number>.</button>
+    <button data-number>0</button>
+    <button data-equal class="span-two">=</button>
+  </div>
+  <script src="Calculator.js"></script>
 </body>
 </html>
