@@ -4,7 +4,13 @@ function beregn() {
   const regnetegn = document.getElementById("regnetegn").value;
   const tal2 = parseFloat(document.getElementById("tal2").value);
  
- let history = [];
+
+  
+  
+  
+
+
+ let history = []; 
 
 
   let resultat;
@@ -40,6 +46,8 @@ function beregn() {
 
   document.getElementById("resultat").innerHTML = "Resultat: " + resultat;
 
+console.log("resultat er: " + resultat);
+document.getElementById("resultat").value = resultat;
 
 }
 
